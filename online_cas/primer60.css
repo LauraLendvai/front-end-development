@@ -1,0 +1,37 @@
+@keyframes move_circle {
+    from {
+        left: -60px;
+    }
+    to {
+        left: 460px;
+    }
+}
+
+.container {
+    background-color: black;
+    width: 400px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container h1 {
+    position: absolute;
+    top: 20px; left: 80px;
+    z-index: 10;
+}
+
+#circle {
+    background-color: yellow;
+    width: 50px; height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 35px;
+    left: -60px;
+    z-index: 5;
+    animation-name: move_circle;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+

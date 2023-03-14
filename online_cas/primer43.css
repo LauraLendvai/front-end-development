@@ -1,0 +1,82 @@
+/* === general === */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+header { 
+    background-color: rgb(224, 49, 49);
+    border: 0.0625rem solid rgb(224, 49, 49);
+}
+
+header a, header h1 {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* media 769 */
+@media all and (max-width:768px) {
+    nav {
+        background-color: black;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.main_link {
+    margin: 1rem 0;
+
+}
+    
+    #brand {
+        display: flex;
+        padding: 0.5rem 0.75rem;
+    }
+    #brand>h1 {
+        flex-grow: 1;
+    }
+    #brand>h1, #mobile-button {
+        font-size: 1.25rem;
+    }
+
+    #mobile-button {
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+}
+
+
+
+/* media 769 + */
+
+@media all and (min-width:769px) {
+    header {
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem 0 1.5rem;
+    }
+    nav {
+        display: flex;
+    }
+    .main_link {
+        margin-right:  1rem;
+    }
+    .main_link:last-of-type {
+        margin-right: 0;
+    }
+    #brand {
+        flex-grow: 1;
+    }
+    #mobile-button {
+        display: none;
+    }
+}

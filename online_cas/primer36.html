@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>keyboard</title>
+    <style>
+        #container {
+            width: 600px;
+            height: 400px;
+            background-color: bisque;
+            border: 1px solid black;
+            position: relative;
+        }
+        #box {
+            width: 50px;
+            height: 50px;
+            background-color: purple;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #enemy {
+            background-color: red;
+            width: 25px; height: 100px;
+            position: absolute;
+            top: 200px; left: 120px;
+        }
+        #barrier {
+            background-color: black;
+            position: absolute;
+            height: 100px;
+            width: 10px;
+            top: 0;
+            left: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <p>Key pressed: <span id="pressed"></span></p>
+    <div id="container">
+        <div id="box"></div>
+        <div id="enemy"></div>
+        <div id="barrier"></div>
+    </div>
+
+    <script src="./primer36.js"></script>
+</body>
+</html>

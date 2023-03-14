@@ -1,0 +1,70 @@
+.checkbox {
+    border: 1px solid #555555;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: lightcoral;
+    position: relative;
+}
+
+.checkmark {
+    display: none;
+    padding: 3px;
+}
+
+.check-input {
+    position: absolute;
+    top:0; left: 0;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.check-input:checked+.checkmark {
+    display: inline;
+}
+
+.checkbox:has(.check-input:checked) {
+    background-color: lightgreen;
+}
+
+
+.radiobutton {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.radio-input {
+    position: absolute;
+    top: 0; left: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+.circle {
+    background-color: dodgerblue;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: none;
+    margin-top: 2.5px;
+    margin-left: 2.5px;
+}
+
+.radio-input:checked+.circle {
+    display: inline-block;
+}
+
+
+
+
+

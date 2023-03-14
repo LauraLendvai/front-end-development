@@ -1,0 +1,61 @@
+header {
+    background-color: bisque;
+    grid-area: m_h;
+}
+
+nav {
+    background-color: aqua;
+    grid-area: nav;
+}
+
+main {
+    background-color: lightpink;
+    grid-area: m;
+}
+
+footer {
+    background-color: lightyellow;
+    grid-area: ft;
+}
+
+#advertisements {
+    background-color: lightcyan;
+    grid-area: ads;
+}
+
+#newsletter {
+    background-color: lightgreen;
+    grid-area: news;
+}
+
+#quick_links {
+    background-color: lightgray;
+    grid-area: q_l;
+}
+
+
+@media all and (min-width:769px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1rem 1fr;
+        grid-template-areas: "m_h m_h m_h"
+                            "nav nav nav"
+                            "m . q_l"
+                            "m . ads"
+                            "m . news"
+                            "ft ft ft";
+    }
+}
+
+@media all and (max-width:768px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: "m_h m_h"
+                             "nav nav"
+                             "m m"
+                             "ads ads"
+                             "q_l news"
+                             "ft ft";                              ;
+    }
+}

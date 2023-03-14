@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Alarm clock";
+    src: url("./fonts/alarmclock.ttf");
+}
+
+* {margin: 10px;}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#stopwatch {
+    font-family: "Alarm clock", monospace;
+    font-size: 96px;
+}
+
+#start {background-color: green; color: white;}
+#stop {background-color: red; color: white;}
+
+#start, #stop, #reset {
+    font-size: 36px;
+    width: 120 px;
+    height: 48px;
+    margin-right: 20 px;
+}
+
+#title {
+    font-size: 60px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+}
+
+#title>img {
+    height: 48px;
+    vertical-align: middle;
+}

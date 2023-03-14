@@ -1,0 +1,48 @@
+@keyframes rotationRight {
+    from { transform: rotate(0);}
+    to { transform: rotate(360deg);}
+}
+
+@keyframes rotationLeft {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0);}
+}
+
+@keyframes moveRight {
+    from {margin-left: 0;}
+    to {margin-left: 200px;}
+}
+
+@keyframes moveLeft {
+    from {margin-left: 200px;}
+    to {margin-left: 0;}
+}
+
+.moveright {
+    animation-name: rotationRight, moveRight;
+    animation-duration: 1s, 12s;
+    animation-iteration-count: 12, 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.moveleft {
+    animation-name: rotationLeft, moveLeft;
+    animation-duration: 1s, 12s;
+    animation-iteration-count: 12, 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+#circle {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 50px;
+}
+

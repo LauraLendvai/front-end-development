@@ -1,0 +1,51 @@
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: darkgray;
+    padding: 8px;
+    left: 0;
+    width: 100%;
+}
+
+.drop-link {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main-link {
+    display: inline-block;
+    padding: 8px;
+}
+
+li:has(.main-link):hover {
+    background-color: darkred;
+}
+
+li:has(.main-link):hover .dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    background-color: red;
+}
+
+#main a {
+    color: white;
+    text-decoration: none;
+}
+
+#main li {
+    list-style: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+}
+
+#main>ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+

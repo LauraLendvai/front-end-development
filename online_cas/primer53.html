@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #slika {
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+    <img id="slika" src="https://picsum.photos/id/50/800/600"/>
+    <script>
+        const imgSlika = document.getElementById("slika")
+        let grayscale = 100
+        let meID=null
+        let mlID=null
+
+        imgSlika.onmouseenter = () => {
+            if(mlID !=null) {
+                clearInterval(mlID)
+                mlID = null
+            }
+            if(meID != null) {
+                return
+            }
+
+            meID = setInterval( () => {
+            imgSlika.style.filter = `grayscale(${grayscale}%)`
+            grayscale-=5
+            if(grayscale<0) {
+                clearInterval(meID)
+                meID=null
+                return
+            }
+                },100)
+            }        
+        imgSlika.onmouseleave = () => {
+            if(meID !=null) {
+                clearInterval(meID)
+                meID=null
+            }
+
+            if(mlID !=null) {
+                return
+            }
+
+            mlID = setInterval( () => {
+            imgSlika.style.filter = `grayscale(${grayscale}%)`
+            grayscale +=5
+            if(grayscale>100) {
+                clearInterval(mlID)
+                mlID=null
+                return
+            }
+                },100)
+
+        }
+    </script>
+</body>
+</html>

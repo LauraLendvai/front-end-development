@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animacija</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .box1 {
+        height: 700px;
+        width: 700px;
+        border: 1px solid black;
+        background-color: #050210;
+    }
+
+    .circle2 {
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        border-radius: 5000px;
+        margin: 200px 200px 200px 200px;
+        filter: blur(1px);
+        animation: animate 0.8s ease infinite; 
+        }
+
+    .circle3 {
+        height: 250px;
+        width: 250px;
+        border: 1px solid black;
+        border-radius: 5000px;
+        margin: 25px 40px 120px 25px;
+        background-color: black;
+    }
+
+    .circle4 {
+  background: rgb(26, 25, 25);
+  opacity: 0.5;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.041);
+  margin: 125px 50px 80px 125px;
+  height: 3px;
+  width: 3px;
+  animation: pulse-black 3s ease-out infinite;
+    }
+
+
+    @keyframes animate {
+        0% {
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff)
+                    }
+        50%{                 
+            background: linear-gradient( #55fb9f, #b97aff, #fb5dad)
+            
+        }
+        100% {
+            background: linear-gradient( #b97aff, #fb5dad,  #55fb9f)
+        }
+    }
+
+    @keyframes pulse-black {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 grey (87, 30, 30, 0);
+  }
+  
+  70% {
+    transform: scale(85);
+    box-shadow: 0 0 0 50px grey (2, 2, 2, 0);
+  }
+  
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 grey (0, 0, 0, 0);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="box1">
+        <div class="circle2"><span></span><span></span><span></span>
+        <div class="circle3"><div class="circle4"></div></div>
+    </div>
+</div>
+
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Pizza order</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Size:</td>
+                <td>
+                    <input type="radio" name="size" value="28" checked/>28 cm <br/>
+                    <input type="radio" name="size" value="32"/>32 cm <br/>
+                    <input type="radio" name="size" value="42"/>42 cm <br/>
+                </td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="radio" name="name"
+                    value="Margherita" checked>Margherita<br/>
+                    <input type="radio" name="name"
+                    value="Marinara">Marinara<br/>
+                    <input type="radio" name="name"
+                    value="Prosciutto">Prosciutto<br/>
+                    <input type="radio" name="name"
+                    value="Capricciosa">Capricciosa<br/>
+                </td>
+            </tr>
+            <tr>
+                <td>Notes</td>
+                <td><textarea id="notes"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button id="sendOrder">Order</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Order</h1>
+    <div id="order"></div>
+
+<script src="./primer29.js"></script>
+</body>
+</html>

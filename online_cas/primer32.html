@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>primer 32</title>
+</head>
+<body>
+    <p>
+        <select id="fruits">
+            <option disabled selected>Choose fruit</option>
+            <option value="Apple">Apple</option>
+            <option value="Orange">Orange</option>
+            <option value="Banana">Banana</option>
+        </select>
+    </p>
+    <p>You chose: <span id="chosen"></span> </p>
+
+    <p>Type: <input type="text" id="text"/></p>
+    <p>You have typed: <span id="typed"><i style="color: grey">Type something</i></span></p>
+
+    <p><input type="checkbox" id="check" value="I am checked"/>Check me</p>
+    <p>State <span id="state">off</span></p> Value: <span id="value">-</span>
+
+
+    <p>
+        <input type="range" min="0" max="100" value="0" id="percent"/>
+        <span id="rangeValue">0</span>%
+    </p>
+
+    <p>
+        <select id="color">
+            <option disabled selected>Choose color</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+    </p>
+    
+    <div id="square" style="width:100px; height:100px"></div>
+    
+
+    <script src="./primer32.js"></script>
+</body>
+</html>

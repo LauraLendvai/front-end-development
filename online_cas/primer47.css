@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.comment {
+    display: flex;
+}
+
+.comment .message {
+    margin-left: 0.75rem;
+}
+
+.comment .user-photo {
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    border: 0.25rem solid white;
+    outline: 0.0625rem solid gray;
+}
+
+.comment .user-photo>img {
+    width: 3.2rem;
+}
+
+.original-comments {
+    background-color: lightgrey;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.post {
+    display: grid;
+
+}
+
+.post-comments {
+    grid-area: comments;
+}
+
+.post-comment>textarea {
+    display: block;
+    width: 100%;
+    min-height: 6rem;
+}
+
+.post-media {
+    grid-area: post_media;
+}
+
+.post-social {
+    grid-area: social;
+}
+
+.post-user {
+    display: flex;
+    padding: 0.5rem 1rem;
+    grid-area: user;
+}
+
+.post-user>.user-name {
+    margin-left: 1rem;
+}
+
+.post-user>.user-name>h1 {
+    margin: 0 0 0.5rem 0;
+}
+
+.post-user>.user-name>.posted {
+    margin: 0;
+    color: lightgrey;
+}
+
+.post-user>.user-photo {
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+    border: 0.4rem solid white;
+    outline: 0.0625rem solid gray;
+}
+
+.post-user>.user-photo img {
+    width: 4.25rem;
+}
+
+.post-media img {
+    width: 100%;
+}
+
+
+@media all and (max-width:768px) {
+    .post {
+        grid-template-columns: auto;
+        grid-template-areas: "user"
+                              "post_media"
+                              "social"
+                              "comments";
+    }
+}                              
+
+
+
+@media all and (min-width:769px) {
+    .post {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "user use"
+                              "post_media comments"
+                              "social social";
+
+        column-gap: 1.5rem;
+        max-width: 47rem;
+        padding: 1rem;
+        margin: 1.5rem auto;
+        border: 0.75rem solid white;
+        outline: 0.0625rem solid gray;
+        border-radius: 0.5rem;
+        box-shadow: 0.0625rem 0.0625rem 1.5rem 0.125rem gray;
+                              
+    }
+
+    .post-comments {
+        display: flex;
+        flex-direction: column;
+    }
+    .comments {flex-grow: 1;}
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

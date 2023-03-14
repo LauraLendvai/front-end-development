@@ -1,0 +1,111 @@
+
+/*
+.p1 +.c {
+    background-color: violet;
+}
+*/
+
+.p1~.c {
+    background-color: orange;
+}
+
+[href="#"] {
+    font-weight: bold;
+}
+
+.p2[href^="http"] {
+    color: red;
+}
+
+.p2[href$="pdf"] {
+    background-color: aqua;
+}
+
+.p2[title*="secret"] {
+    color: orange;
+}
+
+#p3:focus {
+    background-color: aqua;
+}
+
+#p3:disabled {
+    background-color: beige;
+}
+
+#p4:checked + #p4label {
+  color: green;
+  font-weight: bold;
+}
+
+/*
+.p5c:first-child {
+    background-color: purple;
+}
+
+
+.p5c:first-of-type {
+    background-color: orange;
+}
+
+
+.p5c:nth-child(2) {
+    background-color: blue;
+}
+
+*/
+
+.p5c:nth-child(odd) {
+    background-color: blue;
+}
+
+/*
+
+#p6::before {
+    content: "I)";
+    font-size: 24px;
+    display: inline-block;
+    margin-right: 20px;
+}
+*/
+
+#p6::first-letter {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+:is(.p7a,.p7b) {
+    font-weight: bold;
+    color: purple;
+}
+
+P:is(.p8) {
+    background-color: aqua;
+}
+
+.p5:has(.p5c) {
+    background-color: red;
+}
+
+
+.p5c:not(.active) {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
